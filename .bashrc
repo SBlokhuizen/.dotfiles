@@ -117,6 +117,7 @@ fi
 export EDITOR='nvim'
 export VISUAL='nvim'
 alias vim="nvim"
+alias vi="nvim"
 alias v="nvim" 
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="/usr/local/n/versions/node/$(n --version)/bin:$PATH"
