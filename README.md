@@ -3,8 +3,10 @@ Contains my dotfiles.
 
 Install dependencies:
 ```
-sudo apt install tmux npm
+sudo apt install tmux npm ripgrep xclip
 npm install -g n
+# Install nerd font from:
+# https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono
 ```
 
 To generate the symlinks for all dotfiles:
