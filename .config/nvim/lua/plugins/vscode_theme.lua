@@ -1,9 +1,9 @@
 return {
   {
-    'askfiy/visual_studio_code',
+    'Mofiqul/vscode.nvim',
     priority = 1000,
     config = function()
-      vim.cmd [[colorscheme visual_studio_code]]
+      vim.cmd [[colorscheme vscode]]
     end,
   },
 }
