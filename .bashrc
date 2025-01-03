@@ -129,6 +129,8 @@ alias xclip='xclip -selection clipboard'
 alias ggd='cd ~/projects/iter_python/ggd-vtk/ && av'
 alias pcn='cd ~/projects/preconnet && poetry shell'
 alias val='cd ~/projects/iter_python/ids-validator && av'
+alias git_purge='git branch --merged | grep -v "\\*" | xargs -n 1 git branch -d'
+alias wave='cd ~/projects/iter_python/Waveform-Editor && av'
 
 # ls aliases
 alias ls='ls -hN --color=auto --group-directories-first'
