@@ -179,7 +179,13 @@ return {
         clangd = {},
         -- gopls = {},
         ruff = {},
-        pyright = {},
+        pyright = { settings = {
+          python = {
+            analysis = {
+              typeCheckingMode = 'off',
+            },
+          },
+        } },
         yamlls = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
