@@ -146,3 +146,13 @@ if [ -z "$TMUX" ]; then
   tmux attach -d || tmux
 fi
 
+# Git aliases
+alias gac="git add . && git commit -m"
+alias ga="git add"
+alias gp="git push"
+alias gl="git pull"
+alias gb="git branch" 
+alias gc="git commit -m"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias gs="git status"
