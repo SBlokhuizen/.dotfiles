@@ -151,8 +151,24 @@ alias gac="git add . && git commit -m"
 alias ga="git add"
 alias gp="git push"
 alias gl="git pull"
-alias gb="git branch" 
+alias gb="git branch"
 alias gc="git commit -m"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gs="git status"
+
+# Enable autocompletion for the functions
+if [ -f /usr/share/bash-completion/completions/git ]; then
+  source /usr/share/bash-completion/completions/git
+elif [ -f /etc/bash_completion.d/git ]; then
+  source /etc/bash_completion.d/git
+fi
+__git_complete gac _git_commit
+__git_complete ga _git_add
+__git_complete gp _git_push
+__git_complete gl _git_pull
+__git_complete gb _git_branch
+__git_complete gc _git_commit
+__git_complete gco _git_checkout
+__git_complete gcb _git_checkout
+__git_complete gs _git_status
