@@ -147,6 +147,10 @@ if [ -z "$TMUX" ]; then
 fi
 
 # Git aliases
+alias git_purge='git branch --merged | grep -v "\\*" | xargs -n 1 git branch -d'
+alias gco="git checkout"
+alias gcod="git checkout develop"
+alias gcom="git checkout main || git checkout master"
 alias gac="git add . && git commit -m"
 alias ga="git add"
 alias gp="git push"
