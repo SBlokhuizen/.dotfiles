@@ -151,9 +151,18 @@ alias git_purge='git branch --merged | grep -v "\\*" | xargs -n 1 git branch -d'
 alias gco="git checkout"
 alias gcod="git checkout develop"
 alias gcom="git checkout main || git checkout master"
+alias gcob="git checkout -b"
+
 alias gac="git add . && git commit -m"
 alias ga="git add"
+alias gb="git branch"
+alias gs="git status"
+alias gd="git diff"
+alias gds="git diff --staged"
+
+alias gf="git fetch"
 alias gp="git push"
+alias gpf!="git push --force-with-lease"
 alias gl="git pull"
 alias gb="git branch"
 alias gc="git commit -m"
