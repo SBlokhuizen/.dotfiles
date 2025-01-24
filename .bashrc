@@ -129,7 +129,6 @@ alias xclip='xclip -selection clipboard'
 alias ggd='cd ~/projects/iter_python/ggd-vtk/ && av'
 alias pcn='cd ~/projects/preconnet && poetry shell'
 alias val='cd ~/projects/iter_python/ids-validator && av'
-alias git_purge='git branch --merged | grep -v "\\*" | xargs -n 1 git branch -d'
 alias wave='cd ~/projects/iter_python/Waveform-Editor && av'
 
 # ls aliases
@@ -159,16 +158,14 @@ alias gb="git branch"
 alias gs="git status"
 alias gd="git diff"
 alias gds="git diff --staged"
+alias gl="git log"
 
 alias gf="git fetch"
 alias gp="git push"
 alias gpf!="git push --force-with-lease"
-alias gl="git pull"
-alias gb="git branch"
+alias gpl="git pull"
 alias gc="git commit -m"
-alias gco="git checkout"
-alias gcb="git checkout -b"
-alias gs="git status"
+alias gca="git commit --amend --no-edit"
 
 # Enable autocompletion for the functions
 if [ -f /usr/share/bash-completion/completions/git ]; then
