@@ -159,6 +159,8 @@ alias gs="git status"
 alias gd="git diff"
 alias gds="git diff --staged"
 alias gl="git log"
+alias grh="git reset --hard"
+alias gst="git stash"
 
 alias gf="git fetch"
 alias gp="git push"
