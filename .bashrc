@@ -161,12 +161,15 @@ alias gds="git diff --staged"
 alias gl="git log"
 alias grh="git reset --hard"
 alias gst="git stash"
+alias gstp="git stash pop"
+alias gsta="git stash apply"
+alias gstl="git stash list"
 
 alias gf="git fetch"
 alias gp="git push"
 alias gpf!="git push --force-with-lease"
 alias gpl="git pull"
-alias gc="git commit -m"
+alias gc="git commit -S -m"
 alias gca="git commit --amend --no-edit"
 
 # Enable autocompletion for the functions
