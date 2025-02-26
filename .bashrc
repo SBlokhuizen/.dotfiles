@@ -178,6 +178,7 @@ if [ -f /usr/share/bash-completion/completions/git ]; then
 elif [ -f /etc/bash_completion.d/git ]; then
   source /etc/bash_completion.d/git
 fi
+
 __git_complete gac _git_commit
 __git_complete ga _git_add
 __git_complete gp _git_push
@@ -187,3 +188,12 @@ __git_complete gc _git_commit
 __git_complete gco _git_checkout
 __git_complete gcb _git_checkout
 __git_complete gs _git_status
+# Petsc
+export PETSC_ARCH=arch-linux-c-opt
+export PETSC_DIR=/home/sebbe/projects/preconnet-solver/petsc
+export PETSC_LIB_DIR=$PETSC_DIR/$PETSC_ARCH/lib
+export PETSC_INC_DIR=$PETSC_DIR/$PETSC_ARCH/include
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PETSC_LIB_DIR
+export PRECONNET_SOLVER_DIR=/home/sebbe/projects/preconnet-solver
+export PRECONNET_SOLVER_LIB_DIR=$PRECONNET_SOLVER_DIR/build/lib/Debug
+. "$HOME/.cargo/env"
