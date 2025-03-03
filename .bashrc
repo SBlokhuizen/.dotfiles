@@ -152,7 +152,7 @@ alias gcod="git checkout develop"
 alias gcom="git checkout main || git checkout master"
 alias gcob="git checkout -b"
 
-alias gac="git add . && git commit -m"
+alias gac="git add . && git commit -S -m"
 alias ga="git add"
 alias gb="git branch"
 alias gs="git status"
@@ -170,7 +170,7 @@ alias gp="git push"
 alias gpf!="git push --force-with-lease"
 alias gpl="git pull"
 alias gc="git commit -S -m"
-alias gca="git commit --amend --no-edit"
+alias gca="git commit -S --amend --no-edit"
 
 # Enable autocompletion for the functions
 if [ -f /usr/share/bash-completion/completions/git ]; then
@@ -179,15 +179,10 @@ elif [ -f /etc/bash_completion.d/git ]; then
   source /etc/bash_completion.d/git
 fi
 
-__git_complete gac _git_commit
 __git_complete ga _git_add
-__git_complete gp _git_push
-__git_complete gl _git_pull
 __git_complete gb _git_branch
-__git_complete gc _git_commit
 __git_complete gco _git_checkout
 __git_complete gcb _git_checkout
-__git_complete gs _git_status
 # Petsc
 export PETSC_ARCH=arch-linux-c-opt
 export PETSC_DIR=/home/sebbe/projects/preconnet-solver/petsc
