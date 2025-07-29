@@ -22,6 +22,10 @@ tmux source ~/.tmux.conf
 # Then use ctrl + space + I to install TPM plugins
 ```
 
+Enable Githooks
+```
+git config --global core.hooksPath ~/.git-hooks
+```
 
 To remove the created symlinks:
 ```
