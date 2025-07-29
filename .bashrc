@@ -191,4 +191,3 @@ export PETSC_INC_DIR=$PETSC_DIR/$PETSC_ARCH/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PETSC_LIB_DIR
 export PRECONNET_SOLVER_DIR=/home/sebbe/projects/preconnet-solver
 export PRECONNET_SOLVER_LIB_DIR=$PRECONNET_SOLVER_DIR/build/lib/Debug
-. "$HOME/.cargo/env"
