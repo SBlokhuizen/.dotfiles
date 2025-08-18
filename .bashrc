@@ -128,7 +128,7 @@ alias dv="deactivate"
 alias xclip='xclip -selection clipboard'
 alias ggd='cd ~/projects/iter_python/IMAS-ParaView/ && av'
 alias pcn='cd ~/projects/preconnet && poetry shell'
-alias val='cd ~/projects/iter_python/ids-validator && av'
+alias val='cd ~/projects/iter_python/IMAS-Validator && av'
 alias wave='cd ~/projects/iter_python/Waveform-Editor && av'
 
 # ls aliases
