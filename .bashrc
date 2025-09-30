@@ -170,6 +170,7 @@ alias gp="git push"
 alias gpf!="git push --force-with-lease"
 alias gpl="git pull"
 alias gc="git commit -S -m"
+alias gm="git merge"
 alias gca="git commit -S --amend --no-edit"
 
 # Enable autocompletion for the functions
