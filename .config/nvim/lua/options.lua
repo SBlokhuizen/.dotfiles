@@ -70,7 +70,4 @@ vim.opt.fillchars = {
 -- Set marker max line length
 vim.opt.colorcolumn = '88'
 
--- Treat underscore as a word
-vim.opt.iskeyword:remove '_'
-
 -- vim: ts=2 sts=2 sw=2 et
