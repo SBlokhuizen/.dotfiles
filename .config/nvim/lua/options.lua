@@ -70,4 +70,9 @@ vim.opt.fillchars = {
 -- Set marker max line length
 vim.opt.colorcolumn = '88'
 
+-- Syntax highlighting for ymmsl files
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  pattern = '*.ymmsl',
+  command = 'set filetype=yaml',
+})
 -- vim: ts=2 sts=2 sw=2 et
