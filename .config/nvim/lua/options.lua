@@ -76,6 +76,4 @@ vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
   command = 'set filetype=yaml',
 })
 
--- Sync clipboard through SSH
-vim.g.clipboard = 'osc52'
 -- vim: ts=2 sts=2 sw=2 et
