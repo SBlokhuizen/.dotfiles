@@ -77,21 +77,5 @@ vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
 })
 
 -- Sync clipboard through SSH
-vim.schedule(function()
-  if os.getenv 'SSH_TTY' ~= nil then
-    vim.g.clipboard = {
-      name = 'OSC 52',
-      copy = {
-        ['+'] = require('vim.ui.clipboard.osc52').copy '+',
-        ['*'] = require('vim.ui.clipboard.osc52').copy '*',
-      },
-      paste = {
-        ['+'] = require('vim.ui.clipboard.osc52').paste '+',
-        ['*'] = require('vim.ui.clipboard.osc52').paste '*',
-      },
-    }
-  else
-    vim.opt.clipboard = 'unnamedplus'
-  end
-end)
+vim.g.clipboard = 'osc52'
 -- vim: ts=2 sts=2 sw=2 et
