@@ -35,7 +35,14 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  { import = 'plugins' },
+  { import = 'plugins.lsp' },
+  { import = 'plugins.completion' },
+  { import = 'plugins.dap' },
+  { import = 'plugins.git' },
+  { import = 'plugins.navigation' },
+  { import = 'plugins.editing' },
+  { import = 'plugins.ui' },
+  { import = 'plugins.treesitter' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
