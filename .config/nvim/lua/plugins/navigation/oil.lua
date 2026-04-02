@@ -18,6 +18,7 @@ return {
           ['<C-k>'] = false,
           ['<C-j>'] = false,
           ['<M-h>'] = 'actions.select_split',
+          ['<C-p>'] = 'actions.preview',
         },
         win_options = {
           winbar = '%{v:lua.CustomOilBar()}',
@@ -27,7 +28,19 @@ return {
         },
       }
 
-      -- Open parent directory in floating window
+      -- auto-preview when cursor moves (only in oil buffers)
+      vim.api.nvim_create_autocmd('FileType', {
+        pattern = 'oil',
+        callback = function()
+          vim.api.nvim_create_autocmd('CursorMoved', {
+            buffer = 0,
+            callback = function()
+              require('oil.actions').preview.callback()
+            end,
+          })
+        end,
+      })
+
       vim.keymap.set('n', '-', require('oil').toggle_float)
     end,
   },

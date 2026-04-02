@@ -35,6 +35,17 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<C-w>-', ':split<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-w>/', ':vsplit<CR>', { noremap = true, silent = true })
 
+local opts = { noremap = true, silent = true, buffer = bufnr }
+
+vim.keymap.set('n', '[d', function()
+  vim.diagnostic.goto_prev()
+  vim.diagnostic.open_float(nil, { focus = false })
+end, opts)
+
+vim.keymap.set('n', ']d', function()
+  vim.diagnostic.goto_next()
+  vim.diagnostic.open_float(nil, { focus = false })
+end, opts)
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 

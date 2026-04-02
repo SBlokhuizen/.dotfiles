@@ -116,8 +116,6 @@ fi
 # nvim settings
 export EDITOR='nvim'
 export VISUAL='nvim'
-alias vim="nvim"
-alias vi="nvim"
 alias v="nvim" 
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="/usr/local/n/versions/node/$(n --version)/bin:$PATH"
@@ -192,3 +190,10 @@ export PETSC_INC_DIR=$PETSC_DIR/$PETSC_ARCH/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PETSC_LIB_DIR
 export PRECONNET_SOLVER_DIR=/home/sebbe/projects/preconnet-solver
 export PRECONNET_SOLVER_LIB_DIR=$PRECONNET_SOLVER_DIR/build/lib/Debug
+
+# # Bash autocompletion & more
+# source -- ~/.local/share/blesh/ble.sh
+# set -o vi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(~/.rbenv/bin/rbenv init -)"
